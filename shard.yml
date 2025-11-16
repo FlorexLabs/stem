@@ -1,0 +1,13 @@
+name: stem
+version: 0.1.0
+
+authors:
+  - your-name-here <your-email-here>
+
+targets:
+  stem:
+    main: src/stem.cr
+
+crystal: '>= 1.18.2'
+
+license: MIT
