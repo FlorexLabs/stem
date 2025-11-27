@@ -15,6 +15,7 @@ class AppServer < Lucky::BaseAppServer
       # Lucky::StaticCompressionHandler.new("./public", file_ext: "gz", content_encoding: "gzip"),
       # Lucky::StaticFileHandler.new("./public", fallthrough: false, directory_listing: false),
       Lucky::RouteNotFoundHandler.new,
+      CorsHandler.new,
     ] of HTTP::Handler
   end
 
