@@ -1,4 +1,4 @@
-name: stem_temp CI
+name: stem CI
 
 on:
   push:

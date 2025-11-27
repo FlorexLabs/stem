@@ -1,7 +1,7 @@
 require "./server"
 
 Lucky::Session.configure do |settings|
-  settings.key = "_stem_temp_session"
+  settings.key = "_stem_session"
 end
 
 Lucky::CookieJar.configure do |settings|

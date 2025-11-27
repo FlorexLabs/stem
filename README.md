@@ -1,4 +1,4 @@
-# stem_temp
+# stem
 
 This is a project written using [Lucky](https://luckyframework.org). Enjoy!
 

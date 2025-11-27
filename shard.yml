@@ -1,9 +1,9 @@
 ---
-name: stem_temp
+name: stem
 version: 0.1.0
 targets:
-  stem_temp:
-    main: src/stem_temp.cr
+  stem:
+    main: src/stem.cr
 crystal: '>= 1.18.2'
 dependencies:
   lucky:
