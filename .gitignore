@@ -3,4 +3,9 @@
 /bin/
 /.shards/
 *.dwarf
-.idea/
+start_server
+*.dwarf
+*.local.cr
+.env
+/tmp
+.idea

@@ -1,0 +1,40 @@
+services:
+  db:
+    image: postgres:18.1-alpine
+    environment:
+      POSTGRES_USER: ${DB_USERNAME:-lucky}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-password}
+      POSTGRES_DB: ${DB_NAME:-lucky}
+    volumes:
+      - db:/var/lib/postgresql/data
+    ports:
+      - "${DB_PORT:-5432}:5432"
+
+  lucky:
+    env_file:
+      - .env
+    tty: true
+    platform: linux/arm64/v8
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: docker/development.dockerfile
+    command: []
+    entrypoint: ["docker/dev_entrypoint.sh"]
+    volumes:
+      - .:/app
+      - shards_lib:/app/lib
+      - app_bin:/app/bin
+      - build_cache:/root/.cache
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+    ports:
+      - "3000:3000"
+
+volumes:
+  db:
+  shards_lib:
+  app_bin:
+  build_cache:
