@@ -1,21 +1,33 @@
-name: stem
+---
+name: stem_temp
 version: 0.1.0
-
-authors:
-  - your-name-here <your-email-here>
-
 targets:
-  stem:
-    main: src/stem.cr
-
-dependencies:
-  kemal:
-    github: kemalcr/kemal
-  pg:
-    github: will/crystal-pg
-  dotenv:
-    github: drum445/dotenv
-
+  stem_temp:
+    main: src/stem_temp.cr
 crystal: '>= 1.18.2'
-
-license: MIT
+dependencies:
+  lucky:
+    github: luckyframework/lucky
+    version: ~> 1.4.0
+  avram:
+    github: luckyframework/avram
+    version: ~> 1.4.0
+  carbon:
+    github: luckyframework/carbon
+    version: ~> 0.6.0
+  carbon_sendgrid_adapter:
+    github: luckyframework/carbon_sendgrid_adapter
+    version: ~> 0.6.0
+  lucky_env:
+    github: luckyframework/lucky_env
+    version: ~> 0.3.0
+  lucky_task:
+    github: luckyframework/lucky_task
+    version: ~> 0.3.0
+  authentic:
+    github: luckyframework/authentic
+    version: '>= 1.0.2, < 2.0.0'
+  jwt:
+    github: crystal-community/jwt
+    version: ~> 1.6.1
+development_dependencies: {}
