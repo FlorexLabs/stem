@@ -9,7 +9,7 @@ class ServiceSerializer < BaseSerializer
       status:       @service.status,
       responseTime: @service.avg_response_ms,
       lastCheck:    TimeHelper.time_ago(@service.last_check),
-      sparkline: [] of Int32,
+      sparkline:    [] of Int32,
     }
   end
 end

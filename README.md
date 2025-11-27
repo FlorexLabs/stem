@@ -1,11 +1,8 @@
 # Stem
 
+[![Crystal](https://img.shields.io/badge/crystal-1.18.2-000000?logo=crystal&logoColor=white)](https://crystal-lang.org/)
+[![Build](https://github.com/FlorexLabs/stem/actions/workflows/ci.yml/badge.svg)](https://github.com/FlorexLabs/stem/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/FlorexLabs/stem?color=0aa387)](LICENSE)
-[![Issues](https://img.shields.io/github/issues/FlorexLabs/stem)](https://github.com/FlorexLabs/stem/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/FlorexLabs/stem)](https://github.com/FlorexLabs/stem/pulls)
-[![Last Commit](https://img.shields.io/github/last-commit/FlorexLabs/stem?color=14b8a6)](https://github.com/FlorexLabs/stem/commits/main)
-[![Crystal](https://img.shields.io/badge/Crystal-1.18+-000000.svg)](https://crystal-lang.org/)
-[![Lucky](https://img.shields.io/badge/Lucky-API%20app-ff4081.svg)](https://luckyframework.org/)
 
 ---
 
